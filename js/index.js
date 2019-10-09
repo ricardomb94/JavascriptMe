@@ -38,8 +38,37 @@ window.onload = function() {
             //  2. vérifier que le 'username' fait au moins 5 caracteres alphanumérique
             //  3. vérifier que le password fait au moins 8 caracteres et contient a minima une majuscule/minuscule ainsi qu'un entier (integer)
 
+// Accéder à l'élément form
+
+    // let email = document.getElementById("data-mail").value;
+    // let password = document.getElementById("data-pwd").value;
+    // console.log(email);
+
+    // let inputs = document.querySelectorAll('form-control').value;
+
+    let buttonLogin = document.getElementById('connex-button');
+    let inputEmail = document.getElementById('data-mail');
+    let inputPassword = document.getElementById('data-pwd');
+
+    let buttonRegister = document.getElementById('register-button');
+    let input = document.getElementById('pwd');
+    let nom = document.getElementById('mdp');
+
+    buttonLogin.onclick = function (){
+        document.getElementById('data-mail').value;
+        document.getElementById('data-pwd').value;
 
 
+        console.log(buttonLogin.value);
+    }
+   
+    buttonRegister.onclick = function (){
+        document.getElementById('pwd').value;
+
+
+        console.log(buttonRegister.value);
+    }
+   
 
 
 
