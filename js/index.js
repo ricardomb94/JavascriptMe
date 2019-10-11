@@ -42,23 +42,37 @@ window.onload = function() {
     // let password = document.getElementById("data-pwd").value;
     // console.log(email);
 
-    const inputs = document.querySelectorAll('.form-control');
-    // console.log(inputs);
+    const inputsLogin = document.querySelectorAll('.form-control-login');
+    const inputsRegister = document.querySelectorAll('.form-control-register');
+
     let login = document.querySelector('#login');
-    // console.log(login);
     let signup = document.querySelector('#signup');
 
-
+//Affichage des inputs du formulaire login
     login.addEventListener('click', function(event){
-        document.querySelector('#login').value;
+        
 
-        for (let j = 0; j < inputs.length; j++) {
-            let inputValue = inputs[j].value;
+        for (let j = 0; j < inputsLogin.length; j++) {
+            let inputValue = inputsLogin[j].value;
                 console.log(inputValue);
             
              
         }  
     })
+
+
+    //Affichage des inputs du formulaire 
+    signup.addEventListener('click', function(event){
+
+        for (let j = 0; j < inputsRegister.length; j++) {
+            let inputValue = inputsRegister[j].value;
+                console.log(inputValue);
+            
+             
+        }  
+    })
+
+    
 
 
             
