@@ -42,24 +42,29 @@ window.onload = function() {
     // let password = document.getElementById("data-pwd").value;
     // console.log(email);
 
-    let inputs = document.querySelectorAll('.form-control');
+    const inputs = document.querySelectorAll('.form-control');
     // console.log(inputs);
     let login = document.querySelector('#login');
     // console.log(login);
     let signup = document.querySelector('#signup');
 
-    login.addEventListener("onclick", function(evenement) { 
 
-            for (let j = 0; j < inputs.length; j++) {
-              document.querySelector('#pwd-1').value;
-            //   document.querySelector('#emai-1').value;
-            if (inputs.type === "text" && inputs.value === "")
-            console.log("it's an empty textfield")
+    login.addEventListener('click', function(event){
+        document.querySelector('#login').value;
+
+        for (let j = 0; j < inputs.length; j++) {
+            let inputValue = inputs[j].value;
+                console.log(inputValue);
+            
              
-             
-            }
-            console.log(inputs.value);
-        });
+        }  
+    })
+
+
+            
+                
+          
+        
 
     
 
